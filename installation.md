@@ -1,16 +1,15 @@
 # installation
 
 ## force shutdown 
-create a shortcut on somewhere with `%windir%\System32\shutdown.exe /s /t 0`  
-call it from `task scheduler`
 
-launch  
-C:\Users\motoishmzwin\Path\To\Main.toe
+call this from `task scheduler`
 
-kill
+command: `%windir%\System32\shutdown.exe`    
+arguments:  /s /t 0
+
+# task kill
 C:\Windows\System32\taskkill.exe /IM TouchDesigner099.exe /f
 
 
-
-## startup menu
+## Startup menu
 cmd+R --> shell:startup
