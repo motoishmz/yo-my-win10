@@ -5,6 +5,7 @@
     - スペース等全角禁止
     - Ctrl+Spaceで切り替え http://d.hatena.ne.jp/ang65/20110409/1302316109
 - Control Panel > Keyboard からキーリピートを最速に
+- One DriveをUninstall
 
 
 # Chololatery
@@ -62,3 +63,16 @@ https://account.microsoft.com/services/office/install
 https://www.vb-audio.com/Voicemeeter/
 
 ```
+
+
+# rsyncを使ったバックアップ環境つくり
+
+- Windows Subsystem for Linux(WSL)を入れる。DistributionはとりあえずUbuntu。
+- Windows開発者モードをONにする
+- コマンドプロンプトからUbuntuのbackport越しにrsyncを叩く
+
+みたいな事をやる.shをWindows側に作っておけばダブルクリックでバックアップ完了。
+
+Example: LocalのFドライブをリモートのEドライブにまるごとバックアップ
+
+`$ wsl rsync -av -e ssh /mnt/f/ [username]@[host]:/mnt/e`
