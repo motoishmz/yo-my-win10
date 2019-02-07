@@ -71,8 +71,8 @@ https://www.vb-audio.com/Voicemeeter/
 - Windows開発者モードをONにする
 - コマンドプロンプトからUbuntuのbackport越しにrsyncを叩く
 
-みたいな事をやる.shをWindows側に作っておけばダブルクリックでバックアップ完了。
+みたいな事をやるshell scriptをWindows側に作っておけばダブルクリックでバックアップ完了。
 
-Example: LocalのFドライブをリモートのEドライブにまるごとバックアップ
+Example: Local Fドラを家Backup serverのEドラにまるごとバックアップ
 
 `$ wsl rsync -av -e ssh /mnt/f/ [username]@[host]:/mnt/e`
