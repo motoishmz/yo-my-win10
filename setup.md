@@ -75,4 +75,4 @@ https://www.vb-audio.com/Voicemeeter/
 
 Example: Local Fドラを家Backup serverのEドラにまるごとバックアップ
 
-`$ wsl rsync -av -e ssh /mnt/f/ [username]@[host]:/mnt/e`
+`$ wsl rsync -av --delete -e ssh /mnt/f/ [username]@[host]:/mnt/e`
